@@ -1,14 +1,24 @@
-import OutlinedButton from "./Button1";
-import SolidButton from "./Button2";
-import LoginCard from "../architect/logincard";
-import GoogleButton from "./GoogleBtn";
+import OutlinedButton from "./outlinedButton";
+import SolidButton from "./solidButton";
+import GoogleButton from "./googleButton";
 import DividerWithText from "./dividerWithText";
 import Input from "./textInput";
 import PasswordInput from "./passwordInput";
 import RememberMeCheckbox from "./rememberMe";
 import PressableText from "./pressableText";
-
-
-
-export { OutlinedButton, SolidButton, LoginCard, GoogleButton, DividerWithText, Input, PasswordInput, RememberMeCheckbox, PressableText};
-
+import DateInput from "./dateInput";
+import PhoneNumberInput from "./phoneInput";
+import EmailInput from "./emailInput";
+export {
+  OutlinedButton,
+  EmailInput,
+  PhoneNumberInput,
+  DateInput,
+  SolidButton,
+  GoogleButton,
+  DividerWithText,
+  Input,
+  PasswordInput,
+  RememberMeCheckbox,
+  PressableText,
+};

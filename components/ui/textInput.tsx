@@ -7,7 +7,7 @@ const StyledTextInput = styled(TextInput);
 
 export default function Input({ placeholder } : { placeholder: string}) {
   return (
-    <StyledView className="w-full">
+    <StyledView className="">
 
       <StyledTextInput
         className="border border-gray-300 rounded-lg px-4 h-12 text-base w-full py-3 bg-[#F0F4FA] mb-3"
