@@ -15,7 +15,7 @@ const StyledView = styled(View);
 const StyledText = styled(Text);
 export default function LoginCard() {
   return (
-    <StyledView className="w-[80%] h-[400px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
+    <StyledView className="w-[90%] h-[400px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
       <GoogleButton
         text="Continue with Google"
         onPress={() => {
@@ -37,6 +37,7 @@ export default function LoginCard() {
           text="Forgot password?"
           onPress={() => {
             console.log("forgot password pressed");
+            router.push("/Login/forgotPassword/forgotPassword");
           }}
         />
       </StyledView>
