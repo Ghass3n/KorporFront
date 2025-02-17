@@ -1,14 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import { styled } from "nativewind";
 import { LoginCard } from "@/components/architect";
 const StyledView = styled(View);
 const StyledText = styled(Text);
-
+const StyledImage = styled(Image);
+import BackgroundImage from "../../../assets/images/background.png";
 export default function Login() {
   return (
     <StyledView className="flex-1">
       <StyledView className="absolute top-0 left-0 right-0 bottom-0">
-        <StyledView className="h-1/2 bg-[#0366FF]" />
+        <StyledImage source={BackgroundImage} className="h-1/2 w-[100%]" />
         <StyledView className="h-1/2 bg-[#F0F4FA]" />
       </StyledView>
       <StyledView className="flex-1 justify-center items-center">
