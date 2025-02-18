@@ -1,10 +1,10 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styled } from "nativewind";
-import { ForgotPasswordCard } from "@/components/architect";
+import { ForgotPasswordCard } from "@components/architect";
 import { router } from "expo-router";
-import BackgroundImage from "../../../../assets/images/background.png";
-import BackButton from "../../../../assets/images/back.png";
-import Lock from "../../../../assets/images/forgot.png";
+import BackgroundImage from "@assets/images/background.png";
+import BackButton from "@assets/images/back.png";
+import Lock from "@assets/images/forgot.png";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);

@@ -1,11 +1,10 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styled } from "nativewind";
-import { OTPCard, PasswordCard, SignupCard } from "@/components/architect";
+import { OTPCard, PasswordCard, SignupCard } from "@components/architect";
 import { router } from "expo-router";
-import BackgroundImage from "../../../assets/images/background.png";
-import BackButton from "../../../assets/images/back.png";
-import OTP from "../../../assets/images/OTP.png";
-import { OTPInput } from "@/components/ui";
+import BackgroundImage from "@assets/images/background.png";
+import BackButton from "@assets/images/back.png";
+import OTP from "@assets/images/OTP.png";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);

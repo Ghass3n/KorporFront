@@ -1,10 +1,10 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styled } from "nativewind";
-import { SolidButton } from "@/components/ui";
+import { SolidButton } from "@components/ui";
 import { router } from "expo-router";
-import BackgroundImage from "../../../../assets/images/background.png";
-import BackButton from "../../../../assets/images/back.png";
-import Checked from "../../../../assets/images/checked.png";
+import BackgroundImage from "@assets/images/background.png";
+import BackButton from "@assets/images/back.png";
+import Checked from "@assets/images/checked.png";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);

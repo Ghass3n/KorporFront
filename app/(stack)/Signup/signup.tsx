@@ -1,9 +1,9 @@
 import { View, Text, Image } from "react-native";
 import { styled } from "nativewind";
-import { SignupCard } from "@/components/architect";
-import { PressableText } from "@/components/ui/index";
+import { SignupCard } from "@components/architect";
+import { PressableText } from "@components/ui/index";
 import { router } from "expo-router";
-import BackgroundImage from "../../../assets/images/background.png";
+import BackgroundImage from "@assets/images/background.png";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);

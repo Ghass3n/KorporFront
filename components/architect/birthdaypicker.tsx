@@ -1,7 +1,8 @@
 import { View, Modal, TouchableWithoutFeedback, Animated } from "react-native";
 import { styled } from "nativewind";
 import DatePicker from "react-native-modern-datepicker";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import { datePickerOptions, datePickerStyles } from "../../constants/styles";
 
 const StyledView = styled(View);
 
@@ -55,20 +56,8 @@ export default function BirthdayPicker({
                   onSelectDate(date);
                 }}
                 mode="calendar"
-                style={{
-                  backgroundColor: "#f0f4fa",
-                  borderRadius: 10,
-                  borderColor: "#ccc",
-                  borderWidth: 1,
-                  width: 320,
-                  height: 350,
-                }}
-                options={{
-                  mainColor: "#0366FF",
-                  backgroundColor: "#f0f4fa",
-                  textHeaderColor: "#000",
-                  textDefaultColor: "#000",
-                }}
+                style={datePickerStyles}
+                options={datePickerOptions}
               />
             </Animated.View>
           </TouchableWithoutFeedback>

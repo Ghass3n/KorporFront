@@ -1,11 +1,11 @@
 import { View, Text, Image } from "react-native";
 import { styled } from "nativewind";
-import { LoginCard } from "@/components/architect";
+import { LoginCard } from "@components/architect";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);
-import BackgroundImage from "../../../assets/images/background.png";
-import Logo from "../../../assets/images/logo.png";
+import BackgroundImage from "@assets/images/background.png";
+import Logo from "@assets/images/logo.png";
 export default function Login() {
   return (
     <StyledView className="flex-1">
