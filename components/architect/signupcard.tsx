@@ -20,7 +20,7 @@ export default function SignupCard() {
   const [selectedDate, setSelectedDate] = useState("");
 
   return (
-    <StyledView className="w-[80%] h-[450px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
+    <StyledView className="w-[90%] h-[450px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
       <StyledView className="flex-row justify-between items-center space-x-2">
         <StyledView className="flex-1">
           <Input placeholder="first name" />
