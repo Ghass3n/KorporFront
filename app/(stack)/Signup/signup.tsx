@@ -1,9 +1,9 @@
 import { View, Text, Image } from "react-native";
 import { styled } from "nativewind";
-import { SignupCard } from "@/components/architect";
-import { PressableText } from "@/components/ui/index";
+import { SignupCard } from "@components/architect";
+import { PressableText } from "@components/ui/index";
 import { router } from "expo-router";
-import BackgroundImage from "../../../assets/images/background.png";
+import BackgroundImage from "@assets/images/background.png";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);
@@ -19,7 +19,7 @@ export default function Signup() {
           Sign Up
         </StyledText>
         <StyledView className="flex-row">
-          <StyledText className="text-center text-[#F0F4FA] mb-6 text-xs">
+          <StyledText className="text-center text-[#F0F4FA] mb-6 text-xs italic">
             Already have an account?
           </StyledText>
           <PressableText

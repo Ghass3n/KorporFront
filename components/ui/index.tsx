@@ -9,8 +9,12 @@ import PressableText from "./pressableText";
 import DateInput from "./dateInput";
 import PhoneNumberInput from "./phoneInput";
 import EmailInput from "./emailInput";
+import PasswordBarInput from "./passwordBarInput";
+import OTPInput from "./OTPInput";
 export {
   OutlinedButton,
+  OTPInput,
+  PasswordBarInput,
   EmailInput,
   PhoneNumberInput,
   DateInput,

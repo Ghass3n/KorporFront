@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { View, TextInput, TouchableOpacity, Image } from "react-native";
 import { styled } from "nativewind";
-import blueEye from "../../assets/images/blueEye.png"
-import grayEye from "../../assets/images/grayEye.png"
+import blueEye from "@assets/images/blueEye.png";
+import grayEye from "@assets/images/grayEye.png";
 const StyledView = styled(View);
 const StyledTextInput = styled(TextInput);
 
-export default function PasswordInput({ placeholder }: { placeholder: string }) {
+export default function PasswordInput({
+  placeholder,
+}: {
+  placeholder: string;
+}) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   return (

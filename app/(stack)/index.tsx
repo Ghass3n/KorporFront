@@ -1,7 +1,7 @@
 import { Text, View, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
 import { styled } from "nativewind";
-import { OutlinedButton, SolidButton } from "@/components/ui/index";
+import { OutlinedButton, SolidButton } from "@components/ui/index";
 const StyledView = styled(View);
 const StyledText = styled(Text);
 

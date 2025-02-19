@@ -37,6 +37,7 @@ export default function LoginCard() {
           text="Forgot password?"
           onPress={() => {
             console.log("forgot password pressed");
+            router.push("/Login/forgotPassword/forgotPassword");
           }}
         />
       </StyledView>

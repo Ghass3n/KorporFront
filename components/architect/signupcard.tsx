@@ -11,6 +11,7 @@ import {
 } from "../ui/index";
 import BirthdayPicker from "./birthdaypicker";
 import { useState } from "react";
+import { router } from "expo-router";
 
 const StyledView = styled(View);
 const StyledText = styled(Text);
@@ -18,6 +19,8 @@ const StyledText = styled(Text);
 export default function SignupCard() {
   const [isBirthdayPickerVisible, setIsBirthdayPickerVisible] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   return (
     <StyledView className="w-[90%] h-[450px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
@@ -41,6 +44,7 @@ export default function SignupCard() {
         title="Sign up"
         onPress={() => {
           console.log("signup button pressed");
+          router.push("/Signup/password");
         }}
       />
       <DividerWithText text="Or" />
@@ -58,6 +62,7 @@ export default function SignupCard() {
           setSelectedDate(date);
           setIsBirthdayPickerVisible(false);
         }}
+        setIsBirthdayPickerVisible={setIsBirthdayPickerVisible}
       />
     </StyledView>
   );
