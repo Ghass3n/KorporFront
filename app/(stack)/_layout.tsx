@@ -36,6 +36,10 @@ export default function TabsLayout() {
         name="Login/forgotPassword/resetDone"
         options={{ title: "ResetDone", headerShown: false }}
       />
+      <Stack.Screen
+        name="onboarding/onboarding"
+        options={{ title: "onboarding", headerShown: false }}
+      />
     </Stack>
   );
 }
