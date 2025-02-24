@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { View, Text, TextInput } from "react-native";
 import { styled } from "nativewind";
 
@@ -6,16 +6,18 @@ const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledTextInput = styled(TextInput);
 
+interface EmailInputProps {
+  placeholder: string;
+  value: string;
+  onChangeText: (text: string) => void;
+}
+
 export default function EmailInput({
   placeholder,
   value,
   onChangeText,
-}: {
-  placeholder: string;
-  value: string;
-  onChangeText: (text: string) => void;
-}) {
-  const [isValid, setIsValid] = useState(true);
+}: EmailInputProps): JSX.Element {
+  const [isValid, setIsValid] = useState<boolean>(true);
 
   const validateEmail = (text: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -36,7 +38,7 @@ export default function EmailInput({
         autoCapitalize="none"
         autoCorrect={false}
         value={value}
-        onChangeText={(text) => {
+        onChangeText={(text: string) => {
           onChangeText(text);
           validateEmail(text);
         }}
