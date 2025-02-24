@@ -19,21 +19,26 @@ const StyledText = styled(Text);
 export default function SignupCard() {
   const [isBirthdayPickerVisible, setIsBirthdayPickerVisible] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <StyledView className="w-[90%] h-[450px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
       <StyledView className="flex-row justify-between items-center space-x-2">
         <StyledView className="flex-1">
-          <Input placeholder="first name" />
+          <Input placeholder="First Name" value={name} onChangeText={setName} />
         </StyledView>
         <StyledView className="flex-1">
-          <Input placeholder="last name" />
+          <Input
+            placeholder="Last Name"
+            value={surname}
+            onChangeText={setSurname}
+          />
         </StyledView>
       </StyledView>
-      <EmailInput placeholder="email" />
-      {/* Pass the selectedDate as a value to DateInput */}
+      <EmailInput placeholder="Email" value={email} onChangeText={setEmail} />
       <DateInput
         value={selectedDate}
         placeholder="Select birthday"
@@ -43,7 +48,7 @@ export default function SignupCard() {
       <SolidButton
         title="Sign up"
         onPress={() => {
-          console.log("signup button pressed");
+          console.log("Signup Info:", { name, surname, email, selectedDate });
           router.push("/Signup/password");
         }}
       />
@@ -51,11 +56,11 @@ export default function SignupCard() {
       <GoogleButton
         text="Continue with Google"
         onPress={() => {
-          console.log("google button pressed");
+          console.log("Google button pressed");
         }}
       />
 
-      {/* Close the Modal when the date is picked */}
+      {/* Birthday Picker Modal */}
       <BirthdayPicker
         isBirthdayPickerVisible={isBirthdayPickerVisible}
         onSelectDate={(date) => {
