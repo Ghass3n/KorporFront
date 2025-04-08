@@ -25,6 +25,72 @@ export default function App() {
           router.push("/onboarding/onboarding");
         }}
       />
+      <OutlinedButton
+        title="profile"
+        onPress={() => {
+          router.push("/profile/profile");
+        }}
+      />
+      <OutlinedButton
+        title="account"
+        onPress={() => {
+          router.push("/profile/AccountDetails");
+        }}
+      />
+      <OutlinedButton
+        title="settings"
+        onPress={() => {
+          router.push("/profile/settings");
+        }}
+      />
+      <OutlinedButton
+        title="language"
+        onPress={() => {
+          router.push("/profile/LanguageScreen");
+        }}
+      />
+      <OutlinedButton
+        title="currency"
+        onPress={() => {
+          router.push("/profile/Currency");
+        }}
+      />
+      <OutlinedButton
+        title="intro currency"
+        onPress={() => {
+          router.push("/profile/CurrencyIntroScreen");
+        }}
+      />
+      <OutlinedButton
+        title="notifications"
+        onPress={() => {
+          router.push("/profile/NotificationSettingsScreen");
+        }}
+      />
+      <OutlinedButton
+        title="security"
+        onPress={() => {
+          router.push("/profile/SecurityPrivacyScreen");
+        }}
+      />
+      <OutlinedButton
+        title="Help center"
+        onPress={() => {
+          router.push("/profile/GetHelpScreen");
+        }}
+      />
+      <OutlinedButton
+        title="Help collection"
+        onPress={() => {
+          router.push("/profile/HelpCollectionsScreen");
+        }}
+      />
+      <OutlinedButton
+        title="Glossary"
+        onPress={() => {
+          router.push("/profile/Glossary");
+        }}
+      />
     </View>
   );
 }

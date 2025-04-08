@@ -1,12 +1,13 @@
 import { View } from "react-native";
-
-import { SolidButton, EmailInput } from "../ui/index";
 import { router } from "expo-router";
+import { SolidButton, EmailInput } from "../ui/index";
 
 export default function ForgotPasswordCard() {
   return (
-    <View className="w-[90%] h-[170px] bg-[#F0F4FA] rounded-2xl shadow-2xl shadow-gray-400 p-6">
-      <EmailInput placeholder="email" />
+    <View className="w-[90%] max-w-sm bg-white rounded-lg border border-gray-200 shadow-md p-6">
+      <View className="mb-4">
+        <EmailInput placeholder="Email" />
+      </View>
       <SolidButton
         title="Send Reset Link"
         onPress={() => {

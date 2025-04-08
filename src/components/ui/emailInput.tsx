@@ -22,10 +22,10 @@ export default function EmailInput({
   return (
     <View className="w-full">
       <TextInput
-        className={`border rounded-xl px-4 h-12 text-base text-[#fafafa] w-full py-3 ${
+        className={`border rounded-xl px-4 h-12 text-base w-full py-3 ${
           isValid
-            ? "border-[#27272a] bg-[#09090b] mb-3"
-            : "border-red-500 bg-[#09090b]"
+            ? "border-[#27272a] bg-[#f2f2f2] mb-3 text-[#09090b]"
+            : "border-red-500 bg-[#f2f2f2] text-[#09090b]"
         }`}
         placeholder={placeholder}
         placeholderTextColor="#A0A0A0"

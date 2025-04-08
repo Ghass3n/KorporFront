@@ -19,10 +19,10 @@ export default function SolidButton({
 }: SolidButtonProps) {
   return (
     <TouchableOpacity
-      className={`flex-row items-center justify-center bg-[#fafafa] rounded-xl w-${width} h-${height} px-${paddingX} py-${paddingY}`}
+      className={`flex-row items-center justify-center bg-[#09090b] rounded-xl w-${width} h-${height} ${paddingX} ${paddingY}`}
       onPress={onPress}
     >
-      <Text className="font-medium text-[#09090b] text-center text-lg">
+      <Text className="font-medium text-[#fafafa] text-center text-lg">
         {title}
       </Text>
     </TouchableOpacity>
